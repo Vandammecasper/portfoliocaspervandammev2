@@ -1,6 +1,4 @@
-import timeline from "../../../public/pictures/timeline.png"
 import Skills from "../components/skills"
-import timeline_flat from "../../../public/pictures/timeline_flat.png"
 
 export default () => {
     return(
