@@ -1,13 +1,12 @@
-'use client'
 import Lottie from "lottie-react"
-import React, { useState } from 'react'
-import avatar from '../../../public/avatars/avatar.png'
+import React from 'react'
+import avatar from '../../../public/avatars/avatar_loop.json'
 
 
 export default ()=> {
     return(
     <div>
-          <Lottie className="" animationData={avatar} autoplay={true} loop={false}/>
+          <Lottie animationData={avatar} loop={true}/>
     </div>
     )
 }

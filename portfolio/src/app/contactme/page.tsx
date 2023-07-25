@@ -1,12 +1,13 @@
 'use client'
 import { useState } from "react"
+import Logo from "../components/logo";
 export default () => {
 
     const [tooltipText, setTooltipText] = useState('Click here to send me an email');
     const [copied, setCopied] = useState(false);
     const [tooltipVisible, setTooltipVisible] = useState(false);
 
-    function copyToClipboard(text) {
+    function copyToClipboard(text:any) {
         const el = document.createElement('textarea');
         el.value = text;
         document.body.appendChild(el);
@@ -30,26 +31,10 @@ export default () => {
         <main className="">
             <div className="w-screen h-100% grid lg:grid-rows-2 lg:grid-flow-col xl:gap-24 maxlg:justify-items-center lg:pt-28 overflow-auto">
                 <div className="block md:hidden lg:hidden w-80">
-                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
-                    {/* <Player
-                        autoplay
-                        loop
-                        src={avatar_loop}
-                        style={{ height: '90%', width: '90%' }}
-                        >
-                        <Controls visible={false}/>
-                    </Player> */}
+                    <Logo/>
                 </div>
                 <div className="hidden md:block lg:hidden w-80">
-                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
-                    {/* <Player
-                        autoplay
-                        loop
-                        src={avatar_loop}
-                        style={{ height: '110%', width: '110%' }}
-                        >
-                        <Controls visible={false}/>
-                    </Player> */}
+                    <Logo/>
                 </div>
                 <div className="row-span-2 xl:mt-10 lg:w-7/12 sm:p-10 xl:p-0">
                     <div className="flex">
@@ -87,26 +72,10 @@ export default () => {
                     </a>
                 </div>
                 <div className="hidden lg:block lg:row-span-2 lg:w-96 3xl:hidden">
-                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
-                    {/* <Player
-                        autoplay
-                        loop
-                        src={avatar_loop}
-                        style={{ height: '100%', width: '100%' }}
-                        >
-                        <Controls visible={false}/>
-                    </Player> */}
+                    <Logo/>
                 </div>
                 <div className="hidden 3xl:block lg:row-span-2 lg:w-96">
-                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
-                    {/* <Player
-                        autoplay
-                        loop
-                        src={avatar_loop}
-                        style={{ height: '130%', width: '130%' }}
-                        >
-                        <Controls visible={false}/>
-                    </Player> */}
+                    <Logo/>
                 </div>
             </div>
         </main>
