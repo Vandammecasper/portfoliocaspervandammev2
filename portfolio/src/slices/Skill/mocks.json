@@ -1,0 +1,30 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "military",
+							"type": "Text"
+						}
+					],
+					[
+						"years",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "shorter",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

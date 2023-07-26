@@ -1,4 +1,4 @@
-export default () => {
+export default async function Page() {
     return(
         <main className="overflow-hidden">
             <div className="overflow-auto">

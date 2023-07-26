@@ -1,0 +1,24 @@
+{
+  "id": "about",
+  "label": "about",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "information1": {
+        "type": "Text",
+        "config": { "label": "information1", "placeholder": "" }
+      },
+      "information2": {
+        "type": "Text",
+        "config": { "label": "information2", "placeholder": "" }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "skill": { "type": "SharedSlice" } } }
+      }
+    }
+  }
+}

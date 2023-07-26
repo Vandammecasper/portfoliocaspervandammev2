@@ -1,0 +1,27 @@
+{
+  "id": "contact",
+  "label": "contact",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": { "label": "title", "placeholder": "" }
+      },
+      "slogan": {
+        "type": "Text",
+        "config": { "label": "slogan", "placeholder": "" }
+      },
+      "information": {
+        "type": "Text",
+        "config": { "label": "information", "placeholder": "" }
+      },
+      "information_2": {
+        "type": "Text",
+        "config": { "label": "information 2", "placeholder": "" }
+      }
+    }
+  }
+}

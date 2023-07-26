@@ -1,0 +1,27 @@
+{
+  "id": "skill",
+  "type": "SharedSlice",
+  "name": "Skill",
+  "description": "Skill",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "title", "placeholder": "" }
+        },
+        "years": {
+          "type": "Text",
+          "config": { "label": "years", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}

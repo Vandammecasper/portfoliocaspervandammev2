@@ -1,0 +1,15 @@
+{
+  "id": "homepage",
+  "label": "homepage",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slogan": {
+        "type": "Text",
+        "config": { "label": "slogan", "placeholder": "" }
+      }
+    }
+  }
+}
