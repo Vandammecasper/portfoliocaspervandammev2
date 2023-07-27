@@ -238,14 +238,84 @@ export interface ProjectSliceDefaultItem {
   information_2: prismic.KeyTextField;
 
   /**
-   * skill field in *Project → Items*
+   * skill1 field in *Project → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].skill
+   * - **API ID Path**: project.items[].skill1
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  skill: prismic.KeyTextField;
+  skill1: prismic.KeyTextField;
+
+  /**
+   * year1 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].year1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  year1: prismic.KeyTextField;
+
+  /**
+   * skill2 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].skill2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  skill2: prismic.KeyTextField;
+
+  /**
+   * year2 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].year2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  year2: prismic.KeyTextField;
+
+  /**
+   * skill3 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].skill3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  skill3: prismic.KeyTextField;
+
+  /**
+   * year3 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].year3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  year3: prismic.KeyTextField;
+
+  /**
+   * skill4 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].skill4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  skill4: prismic.KeyTextField;
+
+  /**
+   * year4 field in *Project → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.items[].year4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  year4: prismic.KeyTextField;
 }
 
 /**

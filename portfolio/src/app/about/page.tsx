@@ -16,7 +16,7 @@ export default async function Page () {
                         <h2 className="text-base xl:text-lg text-slate-200 pl-8 pt-2 xl:pt-5 w-11/12">{about.data.information1}</h2>
                         <h2 className="text-base xl:text-lg text-slate-200 pl-8 pt-2 xl:pt-5 w-11/12 pb-0 xl:pb-4">{about.data.information2}</h2>
                         <h1 className="text-4xl font-medium text-sky-500 pl-8 xl:pt-0 pt-4">skills()</h1>
-                        <div className="w-5/6">
+                        <div className="w-5/6 ml-4">
                             <SliceZone slices={about.data.slices} components={components}/>
                         </div>
                 </div>

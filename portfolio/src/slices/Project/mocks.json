@@ -42,14 +42,6 @@
 						}
 					],
 					[
-						"skill",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "quietly",
-							"type": "Text"
-						}
-					],
-					[
 						"information_1",
 						{
 							"__TYPE__": "FieldContent",
@@ -62,6 +54,70 @@
 						{
 							"__TYPE__": "FieldContent",
 							"value": "them",
+							"type": "Text"
+						}
+					],
+					[
+						"skill1",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "death",
+							"type": "Text"
+						}
+					],
+					[
+						"year1",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "consider",
+							"type": "Text"
+						}
+					],
+					[
+						"skill2",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "mind",
+							"type": "Text"
+						}
+					],
+					[
+						"year2",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "sign",
+							"type": "Text"
+						}
+					],
+					[
+						"skill3",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "breathe",
+							"type": "Text"
+						}
+					],
+					[
+						"year3",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "are",
+							"type": "Text"
+						}
+					],
+					[
+						"skill4",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "supply",
+							"type": "Text"
+						}
+					],
+					[
+						"year4",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "pain",
 							"type": "Text"
 						}
 					]

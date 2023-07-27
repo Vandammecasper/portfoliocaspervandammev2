@@ -29,9 +29,37 @@
           "type": "Text",
           "config": { "label": "information 2", "placeholder": "" }
         },
-        "skill": {
+        "skill1": {
           "type": "Text",
-          "config": { "label": "skill", "placeholder": "" }
+          "config": { "label": "skill1", "placeholder": "" }
+        },
+        "year1": {
+          "type": "Text",
+          "config": { "label": "year1", "placeholder": "" }
+        },
+        "skill2": {
+          "type": "Text",
+          "config": { "label": "skill2", "placeholder": "" }
+        },
+        "year2": {
+          "type": "Text",
+          "config": { "label": "year2", "placeholder": "" }
+        },
+        "skill3": {
+          "type": "Text",
+          "config": { "label": "skill3", "placeholder": "" }
+        },
+        "year3": {
+          "type": "Text",
+          "config": { "label": "year3", "placeholder": "" }
+        },
+        "skill4": {
+          "type": "Text",
+          "config": { "label": "skill4", "placeholder": "" }
+        },
+        "year4": {
+          "type": "Text",
+          "config": { "label": "year4", "placeholder": "" }
         }
       }
     }
