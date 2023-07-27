@@ -6,10 +6,26 @@
   "status": true,
   "json": {
     "Main": {
+      "projecten": {
+        "type": "Group",
+        "config": {
+          "label": "projecten",
+          "fields": {
+            "project": {
+              "type": "Link",
+              "config": {
+                "label": "project",
+                "select": "document",
+                "customtypes": ["project"]
+              }
+            }
+          }
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
-        "config": { "choices": { "project": { "type": "SharedSlice" } } }
+        "config": { "choices": {} }
       }
     }
   }

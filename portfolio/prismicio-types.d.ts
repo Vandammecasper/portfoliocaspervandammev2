@@ -153,12 +153,116 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
-type ProjectsDocumentDataSlicesSlice = ProjectSlice;
+type ProjectDocumentDataSlicesSlice = SkillSlice;
+
+/**
+ * Content for project documents
+ */
+interface ProjectDocumentData {
+  /**
+   * title field in *project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * information1 field in *project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.information1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  information1: prismic.KeyTextField;
+
+  /**
+   * information2 field in *project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.information2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  information2: prismic.KeyTextField;
+
+  /**
+   * foto field in *project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.foto
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  foto: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *project*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<ProjectDocumentDataSlicesSlice>;
+}
+
+/**
+ * project document from Prismic
+ *
+ * - **API ID**: `project`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ProjectDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ProjectDocumentData>,
+    "project",
+    Lang
+  >;
+
+/**
+ * Item in *projects → projecten*
+ */
+export interface ProjectsDocumentDataProjectenItem {
+  /**
+   * project field in *projects → projecten*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.projecten[].project
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project: prismic.ContentRelationshipField<"project">;
+}
+
+type ProjectsDocumentDataSlicesSlice = never;
 
 /**
  * Content for projects documents
  */
 interface ProjectsDocumentData {
+  /**
+   * projecten field in *projects*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.projecten[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  projecten: prismic.GroupField<Simplify<ProjectsDocumentDataProjectenItem>>;
+
   /**
    * Slice Zone field in *projects*
    *
@@ -191,162 +295,8 @@ export type AllDocumentTypes =
   | AboutDocument
   | ContactDocument
   | HomepageDocument
+  | ProjectDocument
   | ProjectsDocument;
-
-/**
- * Primary content in *Project → Items*
- */
-export interface ProjectSliceDefaultItem {
-  /**
-   * foto field in *Project → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].foto
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  foto: prismic.ImageField<never>;
-
-  /**
-   * title field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].title
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  title: prismic.KeyTextField;
-
-  /**
-   * information 1 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].information_1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  information_1: prismic.KeyTextField;
-
-  /**
-   * information 2 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].information_2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  information_2: prismic.KeyTextField;
-
-  /**
-   * skill1 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].skill1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  skill1: prismic.KeyTextField;
-
-  /**
-   * year1 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].year1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  year1: prismic.KeyTextField;
-
-  /**
-   * skill2 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].skill2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  skill2: prismic.KeyTextField;
-
-  /**
-   * year2 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].year2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  year2: prismic.KeyTextField;
-
-  /**
-   * skill3 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].skill3
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  skill3: prismic.KeyTextField;
-
-  /**
-   * year3 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].year3
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  year3: prismic.KeyTextField;
-
-  /**
-   * skill4 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].skill4
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  skill4: prismic.KeyTextField;
-
-  /**
-   * year4 field in *Project → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.items[].year4
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  year4: prismic.KeyTextField;
-}
-
-/**
- * Default variation for Project Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ProjectSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Record<string, never>,
-  Simplify<ProjectSliceDefaultItem>
->;
-
-/**
- * Slice variation for *Project*
- */
-type ProjectSliceVariation = ProjectSliceDefault;
-
-/**
- * Project Shared Slice
- *
- * - **API ID**: `project`
- * - **Description**: Project
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ProjectSlice = prismic.SharedSlice<
-  "project",
-  ProjectSliceVariation
->;
 
 /**
  * Primary content in *Skill → Items*
@@ -416,12 +366,11 @@ declare module "@prismicio/client" {
       ContactDocumentData,
       HomepageDocument,
       HomepageDocumentData,
+      ProjectDocument,
+      ProjectDocumentData,
       ProjectsDocument,
       ProjectsDocumentData,
       AllDocumentTypes,
-      ProjectSlice,
-      ProjectSliceVariation,
-      ProjectSliceDefault,
       SkillSlice,
       SkillSliceVariation,
       SkillSliceDefault,

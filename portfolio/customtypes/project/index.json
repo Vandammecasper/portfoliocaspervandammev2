@@ -1,0 +1,33 @@
+{
+  "id": "project",
+  "label": "project",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "title": {
+        "type": "Text",
+        "config": { "label": "title", "placeholder": "" }
+      },
+      "information1": {
+        "type": "Text",
+        "config": { "label": "information1", "placeholder": "" }
+      },
+      "information2": {
+        "type": "Text",
+        "config": { "label": "information2", "placeholder": "" }
+      },
+      "foto": {
+        "type": "Image",
+        "config": { "label": "foto", "constraint": {}, "thumbnails": [] }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "skill": { "type": "SharedSlice" } } }
+      }
+    }
+  }
+}

@@ -3,6 +3,5 @@
 import dynamic from "next/dynamic";
 
 export const components = {
-  project: dynamic(() => import("./Project")),
   skill: dynamic(() => import("./Skill")),
 };

@@ -5,6 +5,7 @@ import { useState } from "react"
 
 export default  (title:any, years:any) => {
     const [isHovering, setIsHovering] = useState(true)
+    console.log(title, years)
 
   const handleHover = () => {
     setIsHovering(!isHovering)
