@@ -1,4 +1,3 @@
-import Skills from "../components/skills"
 import { createClient } from '../../prismicio'
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
